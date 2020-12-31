@@ -1,0 +1,165 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      rgba(111, 181, 213, 0.4),
+      rgba(21, 40, 124, 0.8)
+    ),
+    url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  position: relative;
+}
+
+.logobox {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.titlebox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-40%, -50%);
+}
+
+.heading-primary {
+  color: #ffffff;
+  backface-visibility: hidden;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+  animation: moveInLeft 1s ease-out;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 17.4px;
+  padding-bottom: 30px;
+  animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.btn:link,
+.btn:visited {
+  color: #777;
+  background-color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.253);
+  transition: all 0.2s;
+}
+
+.btn:active {
+  transform: translateY(-7px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.253);
+  transition: all 0.2s;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.btn-white {
+  display: inline-block;
+  border-radius: 100px;
+}
+
+.btn-white::after {
+  background-color: white;
+  transition: all 0.3s;
+}
+
+.btn:hover::after {
+  transform: translateY(-10px);
+  opacity: 0;
+  transform: scale(1.3);
+  transition: all 0.3s;
+}
+
+@keyframes btnMoveIn {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.btn-animated {
+  animation: btnMoveIn 1s ease 1s;
+  animation-fill-mode: backwards;
+}
