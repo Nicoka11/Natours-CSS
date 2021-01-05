@@ -340,4 +340,23 @@ body {
 .section-about--text p {
   margin-bottom: 3rem;
 }
+
+.section-features {
+  position: relative;
+  margin-top: -25vh;
+  height: 90vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(113, 160, 214, 0.6)), to(rgba(39, 72, 180, 0.6))), url("../img/nat-4.jpg");
+  background-image: linear-gradient(to bottom right, rgba(113, 160, 214, 0.6), rgba(39, 72, 180, 0.6)), url("../img/nat-4.jpg");
+  background-position: center;
+}
+
+.section-features-container {
+  margin: auto 0;
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  width: 25rem;
+}
 /*# sourceMappingURL=style.css.map */
