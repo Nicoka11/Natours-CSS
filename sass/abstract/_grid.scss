@@ -1,0 +1,9 @@
+.row {
+  display: block;
+}
+
+.col-1-of-2 {
+  display: inline-block;
+  width: $grid-width/2;
+  text-align: center;
+}

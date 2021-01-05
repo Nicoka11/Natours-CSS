@@ -1,6 +1,8 @@
 @import "../sass/abstract/variables";
 @import "../sass/abstract/mixins";
 @import "../sass/abstract/functions";
+@import "../sass/abstract/grid";
+
 
 @import "../sass/base/base";
 @import "../sass/base/animations";
@@ -9,5 +11,6 @@
 
 @import "../sass/components/header";
 @import "../sass/components/button";
+@import "../sass/components/images-superposition";
 
 @import "../sass/pages/home";

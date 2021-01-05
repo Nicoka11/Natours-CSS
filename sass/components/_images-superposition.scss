@@ -1,0 +1,36 @@
+.section-about--photos{
+    position: relative;
+    display: inline-block;
+    height: 35rem;
+    // background-color: rgb(35, 165, 100);
+
+    &:hover > *{
+        transform: scale(.9);
+    }
+    &:hover > *:hover{
+        box-shadow: 0 1.2rem 15px rgba($color: #000000, $alpha: 0.4);
+        outline: rgba($color-primary-dark, 0.6) solid 15px;
+        outline-offset: 2rem;
+        transform: scale(1.1);
+        z-index: 2;
+    }
+
+
+    & [class^="photo-"] {
+        position: absolute;
+        box-shadow: 0 1rem 15px rgba($color: #000000, $alpha: 0.4);
+        transition: all .3s;
+    }
+
+    & .photo-1 {
+        left: -17rem;
+    }
+    & .photo-2 {
+        left: 6rem;
+        top: 5rem;
+    }
+    & .photo-3 {
+        left: -9rem;
+        top: 32%;
+    }
+}

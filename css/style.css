@@ -1,3 +1,13 @@
+.row {
+  display: block;
+}
+
+.col-1-of-2 {
+  display: inline-block;
+  width: 57rem;
+  text-align: center;
+}
+
 *,
 *::after,
 *::before {
@@ -103,6 +113,51 @@ body {
   padding: 3rem;
 }
 
+.heading-primary {
+  color: #fff;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  -webkit-animation: moveInLeft 1s ease-out;
+          animation: moveInLeft 1s ease-out;
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1.74rem;
+  padding-bottom: 3rem;
+  -webkit-animation: moveInRight 1s ease-out;
+          animation: moveInRight 1s ease-out;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#71a0d6), to(#2748b4));
+  background-image: linear-gradient(to right, #71a0d6, #2748b4);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 4rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.heading-secondary:hover {
+  -webkit-transform: skewY(2deg) scale(1.2);
+          transform: skewY(2deg) scale(1.2);
+  text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.233);
+}
+
 .header {
   height: 95vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(113, 160, 214, 0.4)), to(rgba(39, 72, 180, 0.8))), url(../img/hero.jpg);
@@ -200,5 +255,89 @@ body {
           animation: btnMoveIn 1s ease 1s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
+}
+
+.learn-more {
+  display: inline-block;
+  padding: 1rem .6rem;
+  text-decoration: none;
+  color: #549bc4;
+  background-color: rgba(84, 155, 196, 0);
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-bottom: 2px solid #549bc4;
+}
+
+.learn-more:hover {
+  background-color: #549bc4;
+  color: #fff;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+.section-about--photos {
+  position: relative;
+  display: inline-block;
+  height: 35rem;
+}
+
+.section-about--photos:hover > * {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.section-about--photos:hover > *:hover {
+  -webkit-box-shadow: 0 1.2rem 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.2rem 15px rgba(0, 0, 0, 0.4);
+  outline: rgba(39, 72, 180, 0.6) solid 15px;
+  outline-offset: 2rem;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 2;
+}
+
+.section-about--photos [class^="photo-"] {
+  position: absolute;
+  -webkit-box-shadow: 0 1rem 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1rem 15px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.section-about--photos .photo-1 {
+  left: -17rem;
+}
+
+.section-about--photos .photo-2 {
+  left: 6rem;
+  top: 5rem;
+}
+
+.section-about--photos .photo-3 {
+  left: -9rem;
+  top: 32%;
+}
+
+.section-about {
+  margin-top: -22vh;
+  padding: 25rem 0;
+  text-align: center;
+}
+
+.section-about--text {
+  text-align: left;
+  display: inline-block;
+  max-width: 60rem;
+  height: 35rem;
+}
+
+.section-about--text h3 {
+  margin-bottom: 2rem;
+}
+
+.section-about--text p {
+  margin-bottom: 3rem;
 }
 /*# sourceMappingURL=style.css.map */
