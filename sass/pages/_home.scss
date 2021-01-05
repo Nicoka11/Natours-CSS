@@ -1,5 +1,5 @@
 .section-about {
-  margin-top: -22vh;
+  margin-top: -22rem;
   padding: 25rem 0;
   text-align: center;
 
@@ -21,9 +21,8 @@
 }
 
 .section-features {
-  position: relative;
-  margin-top: -25vh;
-  height: 90vh;
+  padding: 20rem 0;
+  margin-top: -10rem;
   background-image: linear-gradient(
       to bottom right,
       rgba($color-primary-light, 0.6),
@@ -31,15 +30,18 @@
     ),
     url("../img/nat-4.jpg");
   background-position: center;
-  // clip-path: polygon(0 30%, 100% 0, 100% 70%, 0 100%);
+  background-size: cover;
+  transform: skewY(-8deg);
 
+  & > * {
+    transform: skewY(8deg);
+  }
   &-container {
-    margin: auto 0;
     text-align: center;
   }
 }
 
-.card {
-  display: inline-block;
-  width: 25rem;
+.section-tours {
+  margin-top: 20rem;
+  text-align: center;
 }

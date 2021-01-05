@@ -1,12 +1,11 @@
 .btn {
   &:link,
   &:visited {
-    color: $color-grey;
-    background-color: $color-white;
     padding: 1.5rem 3rem;
     text-decoration: none;
     transition: all 0.2s;
     position: relative;
+    text-transform: uppercase;
   }
   &:hover {
     transform: translateY(-1rem);
@@ -17,7 +16,7 @@
   &:active {
     transform: translateY(-0.7rem);
     background-color: rgba(227, 236, 255, 0.65);
-    box-shadow: 0 0.2rem 0.6rem rgba($color-black,.253);
+    box-shadow: 0 0.2rem 0.6rem rgba($color-black, 0.253);
     transition: all 0.2s;
   }
 
@@ -34,12 +33,24 @@
   }
 
   &-white {
+    color: $color-grey;
     display: inline-block;
+    background-color: $color-white;
     border-radius: 10rem;
   }
 
   &-white::after {
     background-color: $color-white;
+    transition: all 0.3s;
+  }
+  &-blue {
+    display: inline-block;
+    border-radius: 10rem;
+    background-color: rgba($color-primary, 1);
+    color: $color-white;
+  }
+  &-blue::after {
+    background-color: $color-primary;
     transition: all 0.3s;
   }
 
@@ -58,17 +69,17 @@
 
 .learn-more {
   display: inline-block;
-  padding: 1rem .6rem;
+  padding: 1rem 0.6rem;
   text-decoration: none;
   color: $color-primary;
   background-color: rgba($color-primary, 0);
-  transition: all .2s;
+  transition: all 0.2s;
   border-bottom: 2px solid $color-primary;
 
   &:hover {
     background-color: rgba($color-primary, 1);
     color: $color-white;
     box-shadow: 0px 4px 10px rgba($color: #000000, $alpha: 0.25);
-    transform: translateY(-.5rem);
+    transform: translateY(-0.5rem);
   }
 }
