@@ -1,5 +1,6 @@
 .row {
   display: block;
+  margin-bottom: $gutter-vertical;
 
   [class^="col-"]:not(:last-child){
     margin-right: $gutter-horizontal;

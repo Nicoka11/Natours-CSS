@@ -43,7 +43,15 @@
 
 .section-tours {
   background-color: $color-light-grey;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -12rem;
   text-align: center;
+}
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: rgba($color-light-grey,0.8);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }

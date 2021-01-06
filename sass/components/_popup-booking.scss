@@ -1,0 +1,12 @@
+
+.popup-container{
+    position: fixed;
+    height: 100vh;
+    width: 100vh;
+    .popup {
+        background-color: $color-white;
+        position: fixed;
+        height: 50%;
+        width: 70%;
+    }
+}
