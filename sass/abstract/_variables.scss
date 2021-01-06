@@ -2,10 +2,17 @@ $color-primary: hsl(202, 49%, 55%);
 $color-primary-light: hsl(212, 55%, 64%);
 $color-primary-dark: hsl(226, 64%, 43%);
 
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #f56e00;
+
+$color-tertiary-light: #d341ff;
+$color-tertiary-dark: #8800a3;
+
 $color-white: #fff;
 $color-grey: #777;
+$color-light-grey: rgb(235, 235, 235);
 $color-black: #000;
 
-$grid-width: 114rem;
+$grid-width: 125rem;
 $gutter-vertical: 7rem;
 $gutter-horizontal: 6rem;

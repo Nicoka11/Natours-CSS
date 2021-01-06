@@ -22,11 +22,11 @@
 
   &::after {
     content: "";
+    position: absolute;
     display: inline-block;
     height: 100%;
     width: 100%;
     border-radius: 10rem;
-    position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
@@ -41,6 +41,19 @@
 
   &-white::after {
     background-color: $color-white;
+    transition: all 0.3s;
+  }
+
+  &-booknow {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    border-radius: 10rem;
+    &:active {
+      background-color: $color-white;
+    }
+  }
+
+  &-booknow::after {
     transition: all 0.3s;
   }
   &-blue {
