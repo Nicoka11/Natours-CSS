@@ -1,4 +1,6 @@
 .row {
+  margin: auto;
+  max-width: $grid-width;
   display: block;
   margin-bottom: $gutter-vertical;
 
