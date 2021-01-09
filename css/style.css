@@ -162,7 +162,7 @@ body {
   font-size: 3.5rem;
   font-weight: 400;
   text-transform: uppercase;
-  display: block;
+  display: inline-block;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, right top, from(#71a0d6), to(#2748b4));
   background-image: linear-gradient(to right, #71a0d6, #2748b4);
@@ -174,8 +174,8 @@ body {
 }
 
 .heading-secondary:hover {
-  -webkit-transform: skewY(2deg) scale(1.2);
-          transform: skewY(2deg) scale(1.2);
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
   text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.233);
 }
 
@@ -740,5 +740,36 @@ body {
   border-radius: 8px;
   -webkit-box-shadow: 0 1rem 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0 1rem 15px rgba(0, 0, 0, 0.2);
+}
+
+.book__form {
+  height: 100%;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+  padding: 6rem;
+}
+
+.book__form input[type="text"] {
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  margin-bottom: 5rem;
+  display: block;
+  height: 6rem;
+  width: 60%;
+  border: none;
+  border-radius: 8px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.book__form input[type="text"]:focus {
+  outline: none;
+  border-bottom: 4px solid #2748b4;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */
