@@ -671,6 +671,76 @@ body {
      object-fit: cover;
 }
 
+.form {
+  height: 100%;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+  padding: 6rem;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.form__input {
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  display: block;
+  height: 6rem;
+  width: 60%;
+  border: none;
+  border-radius: 8px;
+  border-bottom: 4px solid transparent;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #777;
+}
+
+.form__input:-ms-input-placeholder {
+  color: #777;
+}
+
+.form__input::-ms-input-placeholder {
+  color: #777;
+}
+
+.form__input::placeholder {
+  color: #777;
+}
+
+.form__input:focus:invalid {
+  border-bottom: 4px solid #f56e00;
+}
+
+.form__input:focus {
+  outline: none;
+  border-bottom: 4px solid #2748b4;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.form__label {
+  font-size: 1.4rem;
+  font-family: inherit;
+  padding-left: 2rem;
+  color: #5f5f5f;
+  opacity: 1;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  -webkit-transform: translateY(-3rem);
+          transform: translateY(-3rem);
+}
+
 .section-about {
   margin-top: -22rem;
   padding: 25rem 0;
@@ -740,36 +810,5 @@ body {
   border-radius: 8px;
   -webkit-box-shadow: 0 1rem 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0 1rem 15px rgba(0, 0, 0, 0.2);
-}
-
-.book__form {
-  height: 100%;
-  width: 60%;
-  background-color: rgba(255, 255, 255, 0.8);
-  -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
-  padding: 6rem;
-}
-
-.book__form input[type="text"] {
-  font-size: 1.5rem;
-  padding-left: 2rem;
-  margin-bottom: 5rem;
-  display: block;
-  height: 6rem;
-  width: 60%;
-  border: none;
-  border-radius: 8px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-}
-
-.book__form input[type="text"]:focus {
-  outline: none;
-  border-bottom: 4px solid #2748b4;
-  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

@@ -272,11 +272,31 @@
       <section class="section-book">
         <div class="row">
           <div class="book">
-            <div class="book__form">
+            <div class="form">
               <h2 class="heading-secondary">start booking now</h2>
               <form action="#" method="get" class="book__form-container">
-                <input type="text" name="name" id="name" placeholder="Full Name"> 
-                <input type="text" name="email" id="email" placeholder="Email Address">
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    name="name"
+                    id="name"
+                    placeholder="Full Name"
+                    required
+                  />
+                  <label for="name" class="form__label">Full Name</label>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    name="email"
+                    id="email"
+                    placeholder="Email Address"
+                    required
+                  />
+                  <label for="email" class="form__label">Email Address</label>
+                </div>
                 <button class="btn">Next Step &rarr;</button>
               </form>
               <div class="row"></div>
