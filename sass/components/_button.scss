@@ -61,6 +61,7 @@
     transition: all 0.3s;
   }
   &-blue {
+    padding: .5rem 1rem;
     display: inline-block;
     border-radius: 10rem;
     background-color: rgba($color-primary, 1);
