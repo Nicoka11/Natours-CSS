@@ -5,9 +5,9 @@
   clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
   padding: 6rem;
 
-  &__group:not(:last-child) {
-    margin-bottom: 2rem;
-  }
+  // &__group:not(:last-child) {
+  //   margin-bottom: 1rem;
+  // }
 
   &__input {
     font-size: 1.5rem;
@@ -55,26 +55,46 @@
   }
 
   &__radio-group {
-    margin-bottom: 2rem;
+    display: inline-block;
+    margin-bottom: 3rem;
   }
   &__radio-dot {
     display: none;
   }
   &__radio-label {
-    font-size: 1.2rem;
+    font-size: $default-font-size;
+    cursor: pointer;
+    position: relative;
+    padding-left: 3.5rem;
+    padding-right: 2rem;
   }
   &__radio-button {
-    content: "";
-    display: block;
-    height: 1.3rem;
-    width: 1.3rem;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
+    border: 5px solid $color-primary;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: $color-primary;
-    opacity: 0;
-    transition: opacity 0.2s;
+    left: 0;
+    top: -3px;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1rem;
+      width: 1rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-color: $color-primary;
+      opacity: 0;
+      transition: opacity .2s;
+    }
+  }
+
+  &__radio-dot:checked + &__radio-label &__radio-button::after {
+    opacity: 1;
   }
 }

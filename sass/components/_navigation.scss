@@ -1,0 +1,19 @@
+.navigation {
+    position: relative;
+    z-index: 10;
+}
+
+.nav__button {
+    top: 8rem;
+    right: 8rem;
+    position: fixed;
+    background-color: $color-white;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    
+    .nav__link {
+        height: 100%;
+        width: 100%;
+    }
+}

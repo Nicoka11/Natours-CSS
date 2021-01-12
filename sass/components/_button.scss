@@ -3,13 +3,19 @@
 
 
 .btn {
+  &,
   &:link,
   &:visited {
+    display: inline-block;
     padding: 1.5rem 3rem;
     text-decoration: none;
     transition: all 0.2s;
     position: relative;
     text-transform: uppercase;
+
+    // Button Formatting
+    border: none;
+    cursor: pointer;
   }
   &:hover {
     transform: translateY(-1rem);
@@ -17,7 +23,9 @@
     transition: all 0.2s;
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-0.7rem);
     background-color: rgba(227, 236, 255, 0.65);
     box-shadow: 0 0.2rem 0.6rem rgba($color-black, 0.253);
@@ -61,14 +69,19 @@
     transition: all 0.3s;
   }
   &-blue {
-    padding: .5rem 1rem;
     display: inline-block;
     border-radius: 10rem;
     background-color: rgba($color-primary, 1);
     color: $color-white;
   }
+
   &-blue::after {
     background-color: $color-primary;
+    transition: all 0.3s;
+  }
+
+  &-blue:active {
+    background-color: $color-primary-light;
     transition: all 0.3s;
   }
 

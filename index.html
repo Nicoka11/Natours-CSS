@@ -12,9 +12,15 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
+    <script defer src="scripts/script.js"></script>
+
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <div class="navigation">
+      <div class="nav__button"><a href="#" class="nav__link"></a></div>
+      <div class="nav__background"></div>
+    </div>
     <header class="header">
       <div class="header__logobox">
         <img src="img/logo-white.png" alt="Natour Logo" class="header__logo" />
@@ -304,8 +310,9 @@
                     id="small"
                     class="form__radio-dot"
                   />
-                  <label for="small" class="form__radio-label"
-                    >Small tour group</label
+                  <label for="small" class="form__radio-label">
+                    <span class="form__radio-button"></span>
+                    Small tour group</label
                   >
                   <input
                     type="radio"
@@ -314,17 +321,63 @@
                     class="form__radio-dot"
                   />
                   <label for="large" class="form__radio-label">
-                    <span class="form__radio-button"></span>Large tour
-                    group</label
+                    <span class="form__radio-button"></span>
+                    Large tour group</label
                   >
                 </div>
-                <a href="#" class="btn btn-blue">Next Step &rarr;</a>
+                <div class="row">
+                  <button href="#" class="btn btn-blue">
+                    Next Step &rarr;
+                  </button>
+                </div>
               </form>
-              <div class="row"></div>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="row u-center-text">
+        <div class="footer__logo-box">
+          <img
+            src="img/logo-green-2x.png"
+            alt="Footer Logo"
+            class="footer__logo"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">contact us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">carrers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">privacy policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built by JONAS SCHMEDTMANN for his online course ADVANCED CSS AND
+            SASS. Copyright © by Jonas Schmedtmann. You are 100% allowed to use
+            this webpage for both personal and commercial use, but NOT to claim
+            it as your own design. A credit to the original author, Jonas
+            Schmedtmann, is of course highly appreciated!
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
